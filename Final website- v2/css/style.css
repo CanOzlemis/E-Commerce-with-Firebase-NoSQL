@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Nunito, sans-serif;
+}
+html {
+
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    
+    background-color: #343a40;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+}
+
+::-webkit-scrollbar {
+display: none;
+}
+
+
+
+.navbar{background:#222222;}
+.nav-item::after{content:'';display:block;width:0px;height:2px;background:#fec400;transition: 0.2s;}
+.nav-item:hover::after{width:100%;}
+.navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link,.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover{color:#fec400;}
+.nav-link{padding:15px 5px;transition:0.2s;}
+.dropdown-item.active, .dropdown-item:active{color:#212529;}
+.dropdown-item:focus, .dropdown-item:hover{background:#fec400;}
+/*------==============================-----------*/
+
+footer {
+    background-color: #222222;
+    color: #fec400;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+footer a {
+    color: #103a94
+}
+
+
+
+.box {
+    background:rgb(0, 0, 0);
+    transition:all 0.2s ease;
+    border:2px dashed #222222;
+    margin-top: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-clip: padding-box;
+    padding:0 20px 20px 20px;
+    min-height:340px;
+    min-width: 300px;
+    color: white;
+  }
+  
+  
+  .box:hover {
+    border:2px solid #fec404;
+  }
+  
+  .box span.box-title {
+      color: #fff;
+      font-size: 24px;
+      font-weight: 300;
+      text-transform: uppercase;
+  }
+  
+  .box .box-content {
+    padding: 16px;
+    border-radius: 0 0 2px 2px;
+    background-clip: padding-box;
+    box-sizing: border-box;
+  }
+  .box .box-content p {
+    color:#ffffff;
+    text-transform:none;
+    font-size: 22px;
+  }
+
+  .box-content a {
+      bottom: 0;
+      border-radius: 50px;
+      background: #222222;
+      color: #fec404;
+      text-decoration: none;
+  }
+  
+  .box-content a:hover {
+      background: #fec404;
+      color: #222222;
+  }
+
+  button {
+    bottom: 0;
+      border-radius: 50px;
+      background: #222222;
+      color: #fec404;
+      text-decoration: none;
+  }
+  
+  button:hover {
+    background: #fec404;
+    color: #222222;
+  }
+  
+
+
+.application {
+    color: #ebf9ee;
+    width: 35.3vw;
+    margin: 1.6vw;
+    display: inline-block;
+    padding: 4%;
+    border-radius: 18px;
+    box-shadow: 3px 3px 5px black;
+}
+
+.application h1 { padding: 1vw;  font-size: 4vw; }
+.application p { font-size: 1.5vw;   padding-left: 5vw;}
+.application h1, .application p { text-shadow: 2px 2px 4px black; }
+
+.application {
+    background-image: url(../pictures/defaultFoodBG.jpg);
+    background-size:cover;
+    background-position: center; 
+}
+
+#market {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.438), 
+        rgba(0, 0, 0, 0.438)
+      ), url(../pictures/marketler.jpg);
+    background-size:cover;
+    background-position: center; 
+}
+
+#restorant {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.438), 
+        rgba(0, 0, 0, 0.438)
+      ), url(../pictures/restorantlar.jpg);
+    background-size:cover;
+    background-position: center;
+}
+
+#taxi {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.438), 
+        rgba(0, 0, 0, 0.438)
+      ), url(../pictures/taxiler.jpg);
+    background-size:cover;
+    background-position: center;
+}
+
+#emlak {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.438), 
+        rgba(0, 0, 0, 0.438)
+      ), url(../pictures/emlaklar.jpg);
+    background-size:cover;
+    background-position: center;
+}
+
+#etkinlik {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.438), 
+        rgba(0, 0, 0, 0.438)
+      ), url(../pictures/etkinlikler.jpg);
+    background-size:cover;
+    background-position: center;
+}
+
+#kutlama {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.438), 
+        rgba(0, 0, 0, 0.438)
+      ), url(../pictures/kutlamalar.jpg);
+    background-size:cover;
+    background-position: center;
+}
+
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}

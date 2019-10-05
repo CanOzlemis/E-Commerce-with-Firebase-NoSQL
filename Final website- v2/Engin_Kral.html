@@ -1,0 +1,125 @@
+<html lang=tr>
+
+<head>
+    <title>LAÜ Cepte-Admin portal</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/EnginKral_CSS.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li> <a href="index.html">Ana sayfa</a> </li>
+            <li> <a href="">Sohbet- YAKINDA!</a> </li>
+            <li>
+                <button onclick="jsOrderList()" class = "orderbtn" id ="orderbtn">
+                    Sipariş Listesi
+                </button>
+                <div class ="bgorderList"  id = "list">
+                    <div class="button">
+                        <div class="container">
+                             <div class="tick">
+                                 <!--ORDER BUTTON !-->
+                             </div>
+                        </div>
+                    </div>
+                    <div class = "orderList">
+                        <h1>Sipariş listesi :</h1>
+                        <hr>
+                        <ol id = "orderItem" class = "listofOrders">
+                            <!--Order list is here !-->
+                        </ol>
+                        <div class = "total">
+                            <hr>
+                            <p>Tutar = <span id = "listPrice"> 0 TL</span> </p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li> <p id = "price">0 TL</p> </li>
+            <li id="logo">LAÜ Cepte</li>
+            <li id = "sign-out-button">Çıkış</li>
+            <li class="lang"> <a href="" id="active">TR</a> </li>
+            <li class="lang"> <a href="">ENG</a> </li>
+        </ul>
+    </div>
+
+    <!--========================!-->
+
+
+
+
+    <!--========================!-->
+
+        <div class="listItem">
+            <h1>Döner</h1>
+            <p>10.50 TL</p>
+                                            <!--Price, Name, arrayNo, listName, Button id -->
+            <button id = "Doner" onclick="addbtn(10.50, 'Döner', 0, 'listDoner', 'Doner')"> Sepete ekle 
+            </button>
+        </div>
+    
+    
+        <div class="listItem">
+            <h1>Köfte</h1>
+            <p>17.50 TL</p>
+            <button id = "Kofte" onclick="addbtn(17.50, 'Köfte', 1,'listKofte', 'Kofte')">Sepete ekle</button>
+        </div>
+    
+        <div class="listItem">
+            <h1>Örnek 1</h1>
+            <p>9.00 TL</p>
+            <button id = "orn1" onclick="addbtn(9.00, 'Örnek 1', 2,'listOrn1', 'orn1')">Sepete ekle</button>
+        </div>
+    
+        <div class="listItem">
+            <h1>Örnek 2</h1>
+            <p>21.25 TL</p>
+            <button id = "orn2" onclick="addbtn(21.25, 'Örnek 2', 3,'listOrn2', 'orn2')">Sepete ekle</button>
+        </div>
+    
+        <div class="listItem">
+            <h1>Örnek 3</h1>
+            <p>14.50 TL</p>
+            <button id = "orn3" onclick="addbtn(14.50, 'Örnek 3', 4,'listOrn3', 'orn3')">Sepete ekle</button>
+        </div>
+    
+        <div class="listItem">
+            <h1>Örnek 4</h1>
+            <p>28.75 TL</p>
+            <button id = "orn4" onclick="addbtn(28.75, 'Örnek 4', 5,'listOrn4', 'orn4')">Sepete ekle</button>
+        </div>
+    
+        <div class="listItem">
+            <h1>Örnek 5</h1>
+            <p>8.00 TL</p>
+            <button id = "orn5" onclick="addbtn(8.00, 'Örnek 5', 6,'listOrn5', 'orn5')">Sepete ekle</button>
+        </div>
+
+
+
+    <!--  ==================  FIREBASE SCRIPT  ==================  !-->
+
+
+<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCJ-sod9xxMtkFM4ntuUYMkYhPlISv8TEg",
+    authDomain: "lau-cepte.firebaseapp.com",
+    databaseURL: "https://lau-cepte.firebaseio.com",
+    projectId: "lau-cepte",
+    storageBucket: "lau-cepte.appspot.com",
+    messagingSenderId: "767239100059"
+  };
+  firebase.initializeApp(config);
+</script>
+
+<script src="js/EnginKral_JS.js"></script>
+    <script src="js/loginCheck.js"></script>
+
+</body>
+
+</html>

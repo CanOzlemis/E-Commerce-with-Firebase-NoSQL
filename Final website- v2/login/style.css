@@ -1,0 +1,102 @@
+body {
+  background-image: url(login_bg.jpg);
+    background-position: center;
+    background-size: cover;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 2vw;
+  text-align: center;
+}
+
+input, button {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+}
+
+button {
+  margin-bottom: 1vw;
+  font-size: 2vw;
+}
+
+.main-div, .loggedin-div, .verification, .first_sign_in, .main_login-div {
+  width: 30%;
+  margin: 0px auto;
+  margin-top: 9vw;
+  padding: 4vw;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+input {
+    font-size: 2vw;
+    text-align: center;
+}
+
+.main-div input, .verification input, .first_sign_in input, .main_login-div input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #fff;
+  padding: 1.5vw;
+  outline: none;
+  width: 100%;
+  margin-bottom: 2vw;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+}
+
+.main-div input:focus, .verification input:focus, .first_sign_in:focus, .main_login-div:focus{
+  border: 1px solid #777;
+}
+
+.main-div button, .loggedin-div button, .verification button, .first_sign_in button, .main_login-div button {
+  background: #5d8ffc;
+  color: #fff;
+  border: 1px solid #5d8ffc;
+  border-radius: 5px;
+  padding: 1.5vw;
+  width: 100%;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+}
+
+#tr, #en {
+    font-size: 1.5vw;
+    color : #5d8ffc;
+}
+
+#tr:hover, #en:hover {
+    cursor: pointer;
+}
+
+#slash {
+    font-size: 2vw;
+}
+
+
+#sign-in-button {
+    margin-top: 2vw;
+}
+
+.main-div label {
+    font-size: 1vw;
+}
+
+
+.verification {
+  background: #fff;
+  color: #5d8ffc;
+  border: 1px solid #5d8ffc;
+}
+
+.verification button:hover{
+    cursor: pointer;
+}
+
+.main-div button:hover, .loggedin-div button:hover, .main_login-div button:hover {
+  background: #fff;
+  color: #5d8ffc;
+  border: 1px solid #5d8ffc;
+  cursor: pointer;
+}

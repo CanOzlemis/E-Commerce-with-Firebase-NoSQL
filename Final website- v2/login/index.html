@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <title>LAÜ Cepte</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+</head>
+
+<body>
+
+
+
+    <div id="login_div" class="main-div">
+<!--         <div class="lang">
+            <label id="tr">Türkçe</label><label id="slash"> / </label><label id="en">English</label>
+        </div> -->
+        <h3>LAÜ Cepte'ye hoşgeldiniz</h3>
+
+        <input class="mdl-textfield__input" type="text" pattern="\+[0-9\s\-\(\)]+" id="phone-number" placeholder="Telefon Numaranız"
+            autocomplete="off" readonly onfocus="this.removeAttribute('readonly');">
+        <label>Giriş için telefon numaranızı ülke kodu ile beraber yazmanız lazım. Türk numarası için örnek = +90 531 222 33 44 </label>
+        <button disabled class="mdl-button mdl-js-button mdl-button--raised" id="sign-in-button">Kaydet</button>
+    </div>
+
+
+    <div class="container">
+        <form id="verification-code-form" action="#">
+            <div class="verification">
+                    <div class="form-group">
+                <!-- Input to enter the verification code -->
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <label class="mdl-textfield__label" for="verification-code">Telefonunuza gelen onay kodu</label>
+
+                    <input class="mdl-textfield__input" type="text" id="verification-code" autocomplete="off" readonly
+                        onfocus="this.removeAttribute('readonly');">
+                </div>
+
+                <!-- Button that triggers code verification -->
+                <input type="submit" class="mdl-button mdl-js-button mdl-button--raised" id="verify-code-button" value="Kodu onayla" />
+                <!-- Button to cancel code verification -->
+                <button class="mdl-button mdl-js-button mdl-button--raised" id="cancel-verify-code-button">İptal</button>
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+
+    <div class="first_sign_in" id="signup">
+
+        <h3>Profiliniz</h3>
+        <input id="user_name" type="text" placeholder="isminiz ve soyadınız" autocomplete="off" readonly onfocus="this.removeAttribute('readonly');">
+        <button id="addData">Kaydet</button>
+
+    </div>
+
+
+
+
+
+
+    <!-- Import and configure the Firebase SDK -->
+
+    <!-- Import and configure the Firebase SDK -->
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
